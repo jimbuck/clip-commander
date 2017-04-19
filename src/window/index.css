@@ -1,0 +1,45 @@
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.history-list {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.history-list li {
+    list-style-type: none;
+    text-overflow: ellipsis;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #555;
+    border: 1px solid #999;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+.history-list li:hover {
+    color: #222;
+    border: 1px solid #555;
+}
+
+.history-list li:hover + li {
+    border-top: 1px solid #555;
+}
+
+.history-list li:not(:last-child) {
+    border-bottom: none;
+}
+
+.history-list li pre {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
